@@ -1,3 +1,45 @@
+function initProductClassFilters() {
+    const sec4Buttons = document.querySelectorAll('.sec4 .filter_btns .all-items');
+    const sec4Items = document.querySelectorAll('.sec4 .products > div');
+
+    if (sec4Buttons.length && sec4Items.length) {
+        sec4Buttons.forEach(button => {
+            button.addEventListener('click', function () {
+                sec4Buttons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+
+                const filter = this.getAttribute('data-filter') || 'all';
+
+                sec4Items.forEach(item => {
+                    const classes = item.className.split(/\s+/);
+                    const shouldShow = filter === 'all' || classes.includes(filter);
+                    item.style.display = shouldShow ? '' : 'none';
+                });
+            });
+        });
+    }
+
+    const sec6Buttons = document.querySelectorAll('.sec6 .cat_item');
+    const sec6Items = document.querySelectorAll('.sec6 .mini_product_card');
+
+    if (sec6Buttons.length && sec6Items.length) {
+        sec6Buttons.forEach(button => {
+            button.addEventListener('click', function () {
+                sec6Buttons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+
+                const filter = this.getAttribute('data-filter') || 'all';
+
+                sec6Items.forEach(item => {
+                    const classes = item.className.split(/\s+/);
+                    const shouldShow = filter === 'all' || classes.includes(filter);
+                    item.style.display = shouldShow ? '' : 'none';
+                });
+            });
+        });
+    }
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     /* ========================= AOS Animation ============================= */
 if (typeof AOS !== 'undefined') {
@@ -49,6 +91,8 @@ if (typeof AOS !== 'undefined') {
             });
         }
     }
+
+    initProductClassFilters();
 });
 
 /* ========================= Header & Scroll Effects ============================= */
