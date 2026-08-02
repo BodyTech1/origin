@@ -1,0 +1,1033 @@
+/* ==========================================================================
+   Media Queries - Responsive Design for Organi Website
+   ========================================================================== */
+
+/* ==================== 1. الشاشات المتوسطة واللابتوب (Max-width: 1199px) ==================== */
+/* ==========================================================================
+   Media Queries - Specific Responsive Styles for Screen 1200px and below
+   ========================================================================== */
+
+@media (max-width: 1200px) {
+
+    /* ---------------- 1. Container Baseline ---------------- */
+    .container {
+        width: 100% !important;
+        /* max-width: 1140px !important; */
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        margin: 0 auto !important;
+    }
+
+    /* ---------------- 2. Header & Navigation ---------------- */
+    nav .header .container {
+        justify-content: space-between;
+    }
+
+    .header_bottom .container {
+        gap: 15px;
+    }
+
+    .header_bottom .container .links ul li  {
+        gap: 20px !important;
+    }
+    .header_bottom .container .links ul li a {
+        font-size: 16px;
+        margin: 15px 15px;
+    }
+
+    .header_bottom .container .nav-extend ul {
+        gap: 8px;
+    }
+
+    /* ---------------- 3. Hero Section (Sec-1 / Ban) ---------------- */
+    .ui {
+        height: auto;
+        min-height: 580px;
+        padding: 60px 0;
+    }
+
+    .banner_title h1 {
+        font-size: 48px;
+        line-height: 1.2;
+    }
+
+    .banner_search_bar input {
+        width: 480px;
+    }
+    
+    .ban-1, .ban-2 {
+        width: 280px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .ban-1 {
+        right: 15px;
+        /* display: none; */
+    }
+    
+    .ban-2 {
+        left: 15px;
+        /* display: none; */
+    }
+    
+    .sec80 .products {
+        gap: 15px;
+    }
+    /* ---------------- 4. Sec-2 (Cards Grid) ---------------- */
+    .sec-2 .card {
+        width: calc(25% - 15px); /* 4 كروت في الصف على شاشة 1200 */
+    }
+
+    /* ---------------- 5. Sec-3 (Three Banners) ---------------- */
+
+    .sec-3{
+        width: 100%;
+    }
+
+    .sec-3 .containers {
+        gap: 15px;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .sec-3 .card {
+        padding: 25px 20px;
+        border-radius: 20px;
+    }
+
+    /* ---------------- 6. Sec-4 (Our Products Grid) ---------------- */
+    .sec4 .products {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px !important;
+    }
+
+    .sec4 .my_controls {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sec5{
+        padding-right: 10px;
+        padding-left: 10px;
+        
+    }
+
+    .sec6{
+        width: 100%;
+    }
+
+    .sec6 .container{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+
+    .sec6 .container .category_list{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    
+    .sec6 .container .category_list .cat_item{
+        width: fit-content;
+        gap: 70px;
+        background-color: #1a1a1a00;
+        transform: scale(1.1);
+    }
+    
+    .sec6 .container .category_list .cat_item:last-child{
+        display: none;
+    }
+
+
+    .mini_product_card {
+        justify-content: center;
+    }
+    /* ---------------- 7. Sec-80 / Slider Sections ---------------- */
+
+    .sec7{
+        padding-top: 70px;
+    }
+
+    .rowc{
+        /* display: none !important; */
+        transform: scale(0.8);
+    }
+
+
+    .sec8 .container .products{
+        grid-template-columns: repeat(2 ,1fr);
+    }
+
+    /* ---------------- 8. Sec-13 (Col Layout) ---------------- */
+
+
+    .sec13 .container .sec13_cards {
+        grid-template-columns: repeat(2 ,1fr);
+    }
+
+
+    .sec13 .container {
+        gap: 20px;
+    }
+
+    .sec13 .col_info h2 {
+        font-size: 30px;
+    }
+
+    /* ---------------- 9. Sec-15 (Features & Instagram Gallery) ---------------- */
+    .sec15 .features_wrapper {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 15px;
+    }
+
+    .sec15 .feature_info h3 {
+        font-size: 13px;
+    }
+
+    .sec15 .feature_info p {
+        font-size: 12px;
+    }
+
+    .sec15 .insta_gallery {
+        grid-template-columns: repeat(5, 1fr) !important;
+    }
+
+    .sec15 .insta_item {
+        height: 180px;
+    }
+
+    /* ---------------- 10. Footer Section ---------------- */
+    .footer_sec {
+        padding: 60px 0 30px;
+    }
+
+    .footer_top {
+        gap: 15px;
+    }
+
+    .newsletter_box form {
+        width: 420px;
+    }
+
+    .footer_middle {
+        grid-template-columns: 1.3fr 1fr 1fr 1.1fr !important;
+        gap: 20px;
+    }
+
+    .footer_col {
+        padding: 0 15px;
+    }
+}
+
+
+/* ==================== 2. الأجهزة اللوحية - Tabelet (Max-width: 991px) ==================== */
+@media (max-width: 992px) {
+    /* ---------------- الهيدر (Header) ---------------- */
+
+
+    .mobile_menu_btn {
+        display: block;
+    }
+
+    
+    .header_bottom .container .logo .bottom_banner{
+        display: none !important;
+    }
+    .header_bottom .container .logo img {
+        margin-left: 50px !important;
+        }
+    
+    .header_bottom .container .links {
+        display: none; /* ينصح بإضافة قائمة همبرجر Mobile Menu هنا */
+    }
+
+    .header_bottom .container input[type="search"] {
+        display: none; /* إخفاء شريط البحث على الأجهزة اللوحية */
+    }
+
+    .togel_btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgba(0, 0, 0, 0.55);
+        border: none;
+        outline: none;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 20px;
+        z-index: 2;
+        width: 1.5em;
+        height: 100%;
+        cursor: pointer;
+        transform: scale(2);
+    }
+
+
+    .search_box {
+        width: 100%;
+        max-width: 100%;
+        order: 3;
+        margin-top: 15px;
+    }
+
+    /* ---------------- السيكشن الرئيسي / البانر ---------------- */
+    .hero_section, .sec1 {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .sidebar_menu {
+        width: 100%;
+    }
+
+    /* ---------------- سيكشن المنتجات والعروض ---------------- */
+    .products_grid, .cards_wrapper {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px;
+    }
+
+    /* ---------------- Section 15 (Features & Instagram) ---------------- */
+    .sec15 .features_wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 15px;
+    }
+
+    .sec15 .insta_gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* ---------------- الفوتر (Footer) ---------------- */
+    .footer_top {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .newsletter_box form {
+        width: 100%;
+    }
+
+    .footer_middle {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 0;
+    }
+
+    .footer_col {
+        padding: 0 20px;
+    }
+
+    /* إلغاء الـ border الأيمن للأعمدة الفردية عند تحولهم لعمودين */
+    .footer_col:nth-child(2n) {
+        border-right: none;
+    }
+}
+
+
+/* ==================== 3. الموبايل بالعرض والطاولات الصغيرة (Max-width: 768px) ==================== */
+@media (max-width: 768px) {
+    /* العناوين العامة */
+    h1, .main_title {
+        font-size: 28px !important;
+    }
+
+    h2 {
+        font-size: 24px !important;
+    }
+
+    nav header{
+        display:none; 
+    }
+    .togel_btn{
+        left: 15px;
+        transform: scale(1.8);
+    }
+
+    /* الهيدر العلوي */
+    .header_top_sosial {
+        display: none;
+    }
+
+    .header_top .container {
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* المعارض والـ Gallery */
+    .sec15 .insta_gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sec15 .insta_item {
+        height: 160px;
+    }
+
+    /* الفوتر */
+    .footer_bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .bottom_links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* ==================== 4. الموبايل الصغير - Mobile Phones (Max-width: 576px) ==================== */
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 12px;
+    }
+
+    /* ---------------- الهيدر ---------------- */
+    .header_top_info {
+        font-size: 12px;
+    }
+
+    .header_icons {
+        gap: 10px;
+    }
+
+    /* ---------------- شبكات المنتجات والكروت ---------------- */
+    .products_grid, .cards_wrapper {
+        grid-template-columns: 1fr !important; /* كارت واحد في كل صف */
+    }
+
+    /* ---------------- Section 15 ---------------- */
+    .sec15 {
+        padding: 40px 0;
+    }
+
+    .sec15 .container {
+        gap: 40px;
+    }
+
+    .sec15 .features_wrapper {
+        grid-template-columns: 1fr; /* عرض المميزات تحت بعضها */
+        gap: 20px;
+    }
+
+    .sec15 .feature_card {
+        justify-content: flex-start;
+    }
+
+    .sec15 .insta_gallery {
+        grid-template-columns: 1fr; /* صور الانستجرام صورة في كل صف للموبايل الصغير */
+    }
+
+    .sec15 .insta_item {
+        height: 220px;
+    }
+
+    /* ---------------- الفوتر (Footer) ---------------- */
+    .footer_sec {
+        padding: 50px 0 25px;
+    }
+
+    .footer_middle {
+        grid-template-columns: 1fr; /* جميع أعمدة الفوتر تحت بعضها */
+        gap: 25px;
+    }
+
+    .footer_col {
+        border-right: none !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        padding: 0 0 25px 0 !important;
+    }
+
+    .footer_col:last-child {
+        border-bottom: none;
+        padding-bottom: 0 !important;
+    }
+
+    .newsletter_box form {
+        flex-direction: column;
+        background: transparent;
+        border: none;
+        gap: 10px;
+    }
+
+    .newsletter_box input {
+        background-color: #1a1a1a;
+        border-radius: 30px;
+        padding: 12px 20px;
+    }
+
+    .newsletter_box button {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+/* ==================== Custom Mobile Sidebar (Updated Style) ==================== */
+
+/* 1. القائمة الجانبية بالخلفية البيضاء */
+.custom_sidebar {
+    position: fixed;
+    top: 0;
+    left: -420px; /* مخفية جهة الشمال */
+    width: 400px;
+    height: 100vh;
+    background-color: #ffffff !important; /* خلفية بيضاء بالكامل */
+    z-index: 9999;
+    padding: 30px 25px;
+    box-shadow: 2px 0 15px rgba(0, 0, 0, 0.08);
+    transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow-y: auto;
+}
+
+.custom_sidebar.show {
+    left: 0; /* تحرك القائمة للظهور */
+}
+
+/* زرار الإغلاق X */
+.sidebar_header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.close_btn {
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    color: #333333;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+}
+
+/* 2. عناصر القائمة الرئيسية */
+.mobile_main_menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #3b4e5f;
+}
+
+.mobile_main_menu .menu_item {
+    border: none !important; /* إزالة الخطوط الفاصلة تماماً */
+    margin-bottom: 5px;
+}
+
+/* الهيدر أو اللينك الرئيسي */
+.mobile_main_menu .menu_header {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+/* 3. تنسيق النص: ألوان الأخضر للـ active والأقسام المفتوحة، وأسود للباقي */
+.mobile_main_menu .menu_header a {
+    color: #222222; /* اللون الأسود الافتراضي */
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+/* الكلمة المضغوطة أو المفعّلة تكون باللون الأخضر */
+.mobile_main_menu .menu_header.active a,
+.mobile_main_menu .menu_header:hover a {
+    color: var(--dark_green, #7CC000) !important; /* أخضر */
+}
+
+/* 4. إخفاء الأسهم تماماً */
+.mobile_main_menu .arrow_icon,
+.mobile_main_menu i {
+    display: none !important; /* إخفاء الأسهم */
+}
+
+/* 5. القائمة الفرعية (UL) اللي بتظهر تحت اللينك */
+.mobile_main_menu .submenu {
+    list-style: none;
+    padding-left: 15px; /* إزاحة خفيفة جهة اليمين للفرع */
+    margin: 5px 0 10px 0;
+    display: none; /* مخفية وتظهر بالجافاسكريبت */
+    border: none !important; /* بدون أي حدود فاصلة */
+}
+
+.mobile_main_menu .submenu li {
+    padding: 6px 0;
+    border: none !important;
+}
+
+.mobile_main_menu .submenu li a {
+    color: #333333; /* أسود للعناصر الفرعية */
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+    transition: color 0.2s ease;
+}
+
+.mobile_main_menu .submenu li a:hover,
+.mobile_main_menu .submenu li a.active {
+    color: var(--dark_green, #7CC000) !important; /* أخضر عند الهوفر/التفعيل */
+}
+
+/* الطبقة المظلمة الخلفية */
+.menu_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 9998;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.menu_overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.sidebar_content{
+    display: flex;
+    flex-direction: column;
+    gap: 400px;
+    height: 100%;
+}
+
+
+
+
+/* ==================== 1. Pop-up Toast Notification ==================== */
+.cart-popup {
+  position: fixed;
+  top: 20px;
+  right: -400px;
+  width: 340px;
+  background: #ffffff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  border-right: 5px solid #7CC000;
+  z-index: 99999;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.cart-popup.show {
+  right: 20px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.cart-popup-content {
+  position: relative;
+  padding: 15px 40px 15px 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+
+.cart-popup-close {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #888;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.cart-popup-close:hover {
+  color: #333;
+}
+
+.cart-popup-icon i {
+  font-size: 28px;
+  color: #7CC000;
+}
+
+.cart-popup-info {
+  flex: 1;
+}
+
+.cart-popup-info h4 {
+  margin: 0 0 3px 0;
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
+
+.cart-popup-info p {
+  margin: 0;
+  font-size: 12px;
+  color: #666;
+}
+
+.cart-popup-btn {
+  background: #7CC000;
+  color: #fff !important;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.cart-popup-btn:hover {
+  background: #68a300;
+}
+
+/* ==================== 2. Cart Sidebar ==================== */
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 9998;
+}
+
+.cart-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cart-sidebar {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 350px;
+  max-width: 100%;
+  height: 100%;
+  background: #fff;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.15);
+  transition: right 0.3s ease-in-out;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-sidebar.active {
+  right: 0;
+}
+
+.cart-sidebar-header {
+  padding: 15px 20px;
+  background: #7CC000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-sidebar-header h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.cart-sidebar-body {
+  padding: 15px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-item img {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.cart-item-details {
+  flex: 1;
+}
+
+.cart-item-details h4 {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.cart-item-details .price {
+  font-size: 13px;
+  color: #7CC000;
+  font-weight: bold;
+}
+
+.cart-item-qty {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cart-item-qty button {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #ccc;
+  background: #f5f5f5;
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.cart-sidebar-footer {
+  padding: 15px 20px;
+  border-top: 1px solid #eee;
+  background: #fafafa;
+}
+
+.cart-total-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.btn-checkout {
+  display: block;
+  text-align: center;
+  background: #7CC000;
+  color: #fff;
+  padding: 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.btn-checkout:hover {
+  background: #68a300;
+}
+
+/* Banner Quantity Controls */
+.banner-cart-action {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.quantity-control button {
+  padding: 8px 12px;
+  border: none;
+  background: #f0f0f0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.quantity-control input {
+  width: 40px;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-weight: bold;
+}
+
+.add-banner-to-cart {
+  background: #7CC000;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
+
+
+
+
+/* ==================== Custom Product Popup ==================== */
+.cart-popup {
+  position: fixed;
+  top: 20px;
+  right: -450px; /* مخفية تماماً جهة اليمين */
+  width: 360px;
+  background: #ffffff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  border-right: 5px solid #7CC000;
+  z-index: 99999;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.cart-popup.show {
+  right: 20px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.cart-popup-content {
+  position: relative;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cart-popup-close {
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #999;
+  cursor: pointer;
+}
+
+.cart-popup-close:hover {
+  color: #333;
+}
+
+/* صورة المنتج داخل الـ Popup */
+.cart-popup-img-box {
+  width: 65px;
+  height: 65px;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 1px solid #eee;
+}
+
+.cart-popup-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cart-popup-info {
+  flex: 1;
+}
+
+.popup-badge {
+  font-size: 11px;
+  color: #7CC000;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.cart-popup-info h4 {
+  margin: 0 0 4px 0;
+  font-size: 14px;
+  color: #222;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.popup-price-qty {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.popup-price {
+  font-size: 13px;
+  color: #7CC000;
+  font-weight: bold;
+}
+
+.popup-qty {
+  font-size: 11px;
+  color: #777;
+  background: #f2f2f2;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.cart-popup-btn {
+  background: #7CC000;
+  color: #fff !important;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.cart-popup-btn:hover {
+  background: #68a300;
+}
+
+
+/* عرض شريط التمرير */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* المسار الخلفي (Track) */
+::-webkit-scrollbar-track {
+  background-color: #fffdfd00;
+  border-radius: 4px;
+}
+
+/* الأجزاء المتحركة (Thumb) */
+::-webkit-scrollbar-thumb {
+  background-color: #7CC000;
+  border-radius: 4px;
+}
+
+/* عند الهوفر على الشريط */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #68a300;
+}

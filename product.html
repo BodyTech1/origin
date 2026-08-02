@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/style2.css">
+    <link rel="stylesheet" href="./CSS/media.css">
+    <link rel="stylesheet" href="./lib/slick/slick.css">
+    <link rel="stylesheet" href="./lib/slick/slick-theme.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head>
+<body>
+    
+    <nav>
+        <header>
+            <div class="container">
+                <div>Free shipping on all orders over $99</div>
+                <ul>
+                    <li>Become A Vendor</li>
+                    <li>Order Tracking</li>
+                    <li>My Wishlist</li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="header_bottom">
+            <div class="container">
+                <div class="logo">
+                    <i class="togel_btn fa-solid fa-bars "></i>
+                    <img src="./img/Home/logo.png" alt="Logo">
+                </div>
+
+                <input type="search" placeholder="All   |   What are you shopping for?">
+
+                <div class="nav-extend">
+                    <ul>
+                        <!-- <li id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></li> -->
+                        <li><i class="fa-solid fa-user"></i></li>
+                        <li><i class="fa-regular fa-heart"></i></li>
+                        <li class="cart_btn"><i class="fa-solid fa-bag-shopping"></i><span class="cart-count-badge" style="display:none;">0</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="custom_sidebar" id="customSidebar">
+    <div class="sidebar_header">
+        <button class="close_btn" id="closeBtn">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+    
+    <div class="sidebar_content">
+        <ul class="mobile_main_menu">
+            <li class="menu_item has_dropdown">
+                <div class="menu_header">
+                    <a href="index.html">Home</a>
+                    <i class="fa-solid fa-chevron-down arrow_icon"></i>
+                </div>
+                <ul class="submenu">
+                    <li><a href="index.html">Home V.1</a></li>
+                    <li><a href="index-2.html">Home V.2</a></li>
+                    <li><a href="index-3.html">Home V.3</a></li>
+                    <li><a href="index-4.html">Home V.4</a></li>
+                </ul>
+            </li>
+
+            <li class="menu_item has_dropdown">
+                <div class="menu_header">
+                    <a href="#">Shop</a>
+                    <i class="fa-solid fa-chevron-down arrow_icon"></i>
+                </div>
+                <ul class="submenu">
+                    <li><a href="product.html">Shop Sidebar</a></li>
+                    <li><a href="shop-list.html">Shop List</a></li>
+                </ul>
+            </li>
+
+            <li class="menu_item has_dropdown">
+                <div class="menu_header">
+                    <a href="#">Blog</a>
+                    <i class="fa-solid fa-chevron-down arrow_icon"></i>
+                </div>
+                <ul class="submenu">
+                    <li><a href="blog-details.html">Blog Details</a></li>
+                    <li><a href="blog-grid.html">Blog Grid</a></li>
+                    <li><a href="blog-list.html">Blog List</a></li>
+                </ul>
+            </li>
+
+            <li class="menu_item">
+                <div class="menu_header">
+                    <a href="#!">Portfolio</a>
+                </div>
+            </li>
+
+            <li class="menu_item has_dropdown">
+                <div class="menu_header">
+                    <a href="#">Pages</a>
+                    <i class="fa-solid fa-chevron-down arrow_icon"></i>
+                </div>
+                <ul class="submenu">
+                    <li><a href="cart.html">Cart Page</a></li>
+                    <li><a href="faqs.html">Faqs Page</a></li>
+                    <li><a href="about-us.html">About Us V.1</a></li>
+                    <li><a href="about-us-2.html">About Us V.2</a></li>
+                    <li><a href="vendor.html">Vendor Page</a></li>
+                    <li><a href="vendor-profile.html">Vendor Profile</a></li>
+                    <li><a href="vendor-dashboard.html">Vendor Dashboard</a></li>
+                    <li><a href="product-detail.html">Product Details V.1</a></li>
+                    <li><a href="product-detail-2.html">Product Details V.2</a></li>
+                </ul>
+            </li>
+
+            <li class="menu_item has_dropdown">
+                <div class="menu_header">
+                    <a href="#">Contacts</a>
+                    <i class="fa-solid fa-chevron-down arrow_icon"></i>
+                </div>
+                <ul class="submenu">
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="menu_overlay" id="menuOverlay"></div>
+
+
+    <section class="sec1" style="position: relative !important;" data-aos="fade-up">
+        <div class="bread_cumb" style="background-image: url(./img/Shop/breadcrumb1.png);" data-aos="fade-up">
+            <div class="breadcrumb_cont">
+                  <div class="breadcrumb_title">
+                     <h2 class="text-white">Shop List Sidebar</h2>
+                  </div>
+                  <ul class="list-unstyled breadcrumb_item d-flex justify-content-center align-items-center text-white">
+                     <li><a href="index.html"><i class="fas fa-home active"></i>Home</a></li>
+                     <li><i class="fas fa-chevron-right"></i>About</li>
+                     <li><i class="fas fa-chevron-right"></i>Dried</li>
+                  </ul>
+               </div>
+        </div>
+    </section>
+
+
+    <section class="shop_section" data-aos="fade-up">
+    <div class="container" data-aos="fade-up">
+        
+        <div class="shop_top_bar">
+            <div class="top_bar_left">
+                <div class="view_mode_btns">
+                    <button class="view_btn active" type="button">
+                        <img src="./img/Shop/image.svg" alt="Grid View">
+                    </button>
+                    <button class="view_btn" type="button">
+                        <img src="./img/Shop/image (1).svg" alt="List View">
+                    </button>
+                </div>
+                <span class="results_count">Showing 1–18 of 24 results</span>
+            </div>
+
+            <div class="top_bar_right">
+                <div class="sorting_dropdown">
+                    <label for="sortBy">Default Sorting:</label>
+                    <select id="sortBy" class="sort_select">
+                        <option value="popularity">Popularity</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="latest">Latest</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="shop_wrapper">
+            
+            <aside class="shop_sidebar">
+                
+                <div class="sidebar_widget search_widget">
+                    <form class="search_box">
+                        <input type="text" placeholder="Search">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+
+                <div class="sidebar_widget category_widget">
+                    <h3 class="widget_title">Categories</h3>
+                    <ul class="checkbox_list">
+                        <li><label><input type="checkbox"> Beverages</label></li>
+                        <li><label><input type="checkbox"> Biscuits, Snacks</label></li>
+                        <li><label><input type="checkbox"> Breakfast &amp; Dairy</label></li>
+                        <li><label><input type="checkbox"> Fruits &amp; Vegetables</label></li>
+                        <li><label><input type="checkbox"> Home Needs</label></li>
+                        <li><label><input type="checkbox"> Grocery &amp; Staples</label></li>
+                        <li><label><input type="checkbox"> Home &amp; Kitchen</label></li>
+                        <li><label><input type="checkbox"> Household Needs</label></li>
+                        <li><label><input type="checkbox"> Meats, Frozen</label></li>
+                        <li><label><input type="checkbox"> Noodles, Sauces</label></li>
+                        <li><label><input type="checkbox"> Personal Care</label></li>
+                        <li><label><input type="checkbox"> Pet Care</label></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar_widget price_filter_widget">
+                    <h3 class="widget_title">Filter By Price</h3>
+                    <div class="price_slider">
+                        <div class="slider_track"></div>
+                    </div>
+                    <div class="price_filter_action">
+                        <button class="filter_btn" type="button">FILTER &rarr;</button>
+                        <span class="price_range">$10 - $3409</span>
+                    </div>
+                </div>
+
+                <div class="sidebar_widget trending_widget">
+                    <h3 class="widget_title">Trending Items</h3>
+                    <div class="trending_list">
+                        
+                        <div class="trending_item">
+                            <img src="./img/Shop/trend7.png" alt="Mango Juices">
+                            <div class="item_info">
+                                <h4>Mango Juices</h4>
+                                <div class="prices"><del>$22</del> <span class="current">$18</span></div>
+                                <div class="stars">★★★★☆</div>
+                            </div>
+                        </div>
+
+                        <div class="trending_item">
+                            <img src="./img/Shop/trend8.png" alt="Beef Steak">
+                            <div class="item_info">
+                                <h4>Beef Steak</h4>
+                                <div class="prices"><del>$22</del> <span class="current">$18</span></div>
+                                <div class="stars">★★★★☆</div>
+                            </div>
+                        </div>
+
+                        <div class="trending_item">
+                            <img src="./img/Shop/trend9.png" alt="Broccoli">
+                            <div class="item_info">
+                                <h4>Broccoli</h4>
+                                <div class="prices"><del>$22</del> <span class="current">$18</span></div>
+                                <div class="stars">★★★★☆</div>
+                            </div>
+                        </div>
+
+                        <div class="trending_item">
+                            <img src="./img/Shop/trend10.png" alt="Strawberries">
+                            <div class="item_info">
+                                <h4>Strawberries</h4>
+                                <div class="prices"><del>$22</del> <span class="current">$18</span></div>
+                                <div class="stars">★★★★☆</div>
+                            </div>
+                        </div>
+
+                        <div class="trending_item">
+                            <img src="./img/Shop/trend11.png" alt="Body Lotion">
+                            <div class="item_info">
+                                <h4>Body Lotion</h4>
+                                <div class="prices"><del>$22</del> <span class="current">$18</span></div>
+                                <div class="stars">★★★★☆</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <a href="#" class="view_more_link">VIEW MORE &rarr;</a>
+                </div>
+
+            </aside>
+
+            <main class="shop_main_content">
+                <div class="products_grid">
+                    
+                    <div class="product_card">
+                        <div class="card_badges">
+                            <span class="badge_category">MEATS</span>
+                            <span class="badge_discount">-27%</span>
+                        </div>
+                        <div class="card_image">
+                            <img src="./img/Shop/product1.png" alt="Organic Cabbage">
+                            <ul class="card_action_btns">
+                                <li><button type="button" title="Add to Cart"><i class="fa-solid fa-bag-shopping"></i></button></li>
+                                <li><button type="button" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button></li>
+                                <!-- <li><button type="button" title="Quick View"><i class="fa-regular fa-eye"></i></button></li> -->
+                            </ul>
+                        </div>
+                        <div class="card_body">
+                            <div class="rating_stars">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating_val">(4.0)</span>
+                            </div>
+                            <h3 class="product_title"><a href="#">Organic Cabbage</a></h3>
+                            <div class="product_price">
+                                <span class="sale_price">$50.00</span>
+                                <del class="old_price">$65.00</del>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product_card">
+                        <div class="card_badges">
+                            <span class="badge_category">MEATS</span>
+                            <span class="badge_discount">-27%</span>
+                        </div>
+                        <div class="card_image">
+                            <img src="./img/Shop/product2.png" alt="Organic Cabbage">
+                            <ul class="card_action_btns">
+                                <li><button type="button" title="Add to Cart"><i class="fa-solid fa-bag-shopping"></i></button></li>
+                                <li><button type="button" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button></li>
+                                <!-- <li><button type="button" title="Quick View"><i class="fa-regular fa-eye"></i></button></li> -->
+                            </ul>
+                        </div>
+                        <div class="card_body">
+                            <div class="rating_stars">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating_val">(4.0)</span>
+                            </div>
+                            <h3 class="product_title"><a href="#">Organic Cabbage</a></h3>
+                            <div class="product_price">
+                                <span class="sale_price">$50.00</span>
+                                <del class="old_price">$65.00</del>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product_card">
+                        <div class="card_badges">
+                            <span class="badge_category">MEATS</span>
+                            <span class="badge_discount">-27%</span>
+                        </div>
+                        <div class="card_image">
+                            <img src="./img/Shop/product3.png" alt="Organic Cabbage">
+                            <ul class="card_action_btns">
+                                <li><button type="button" title="Add to Cart"><i class="fa-solid fa-bag-shopping"></i></button></li>
+                                <li><button type="button" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button></li>
+                                <!-- <li><button type="button" title="Quick View"><i class="fa-regular fa-eye"></i></button></li> -->
+                            </ul>
+                        </div>
+                        <div class="card_body">
+                            <div class="rating_stars">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating_val">(4.0)</span>
+                            </div>
+                            <h3 class="product_title"><a href="#">Organic Cabbage</a></h3>
+                            <div class="product_price">
+                                <span class="sale_price">$50.00</span>
+                                <del class="old_price">$65.00</del>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product_card">
+                        <div class="card_badges">
+                            <span class="badge_category">MEATS</span>
+                            <span class="badge_discount">-27%</span>
+                        </div>
+                        <div class="card_image">
+                            <img src="./img/Shop/product4.png" alt="Organic Cabbage">
+                            <ul class="card_action_btns">
+                                <li><button type="button" title="Add to Cart"><i class="fa-solid fa-bag-shopping"></i></button></li>
+                                <li><button type="button" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button></li>
+                                <!-- <li><button type="button" title="Quick View"><i class="fa-regular fa-eye"></i></button></li> -->
+                            </ul>
+                        </div>
+                        <div class="card_body">
+                            <div class="rating_stars">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating_val">(4.0)</span>
+                            </div>
+                            <h3 class="product_title"><a href="#">Organic Cabbage</a></h3>
+                            <div class="product_price">
+                                <span class="sale_price">$50.00</span>
+                                <del class="old_price">$65.00</del>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product_card">
+                        <div class="card_badges">
+                            <span class="badge_category">MEATS</span>
+                            <span class="badge_discount">-27%</span>
+                        </div>
+                        <div class="card_image">
+                            <img src="./img/Shop/product5.png" alt="Organic Cabbage">
+                            <ul class="card_action_btns">
+                                <li><button type="button" title="Add to Cart"><i class="fa-solid fa-bag-shopping"></i></button></li>
+                                <li><button type="button" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button></li>
+                                <!-- <li><button type="button" title="Quick View"><i class="fa-regular fa-eye"></i></button></li> -->
+                            </ul>
+                        </div>
+                        <div class="card_body">
+                            <div class="rating_stars">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating_val">(4.0)</span>
+                            </div>
+                            <h3 class="product_title"><a href="#">Organic Cabbage</a></h3>
+                            <div class="product_price">
+                                <span class="sale_price">$50.00</span>
+                                <del class="old_price">$65.00</del>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product_card">
+                        <div class="card_badges">
+                            <span class="badge_category">MEATS</span>
+                            <span class="badge_discount">-27%</span>
+                        </div>
+                        <div class="card_image">
+                            <img src="./img/Shop/product6.png" alt="Organic Cabbage">
+                            <ul class="card_action_btns">
+                                <li><button type="button" title="Add to Cart"><i class="fa-solid fa-bag-shopping"></i></button></li>
+                                <li><button type="button" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button></li>
+                                <!-- <li><button type="button" title="Quick View"><i class="fa-regular fa-eye"></i></button></li> -->
+                            </ul>
+                        </div>
+                        <div class="card_body">
+                            <div class="rating_stars">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating_val">(4.0)</span>
+                            </div>
+                            <h3 class="product_title"><a href="#">Organic Cabbage</a></h3>
+                            <div class="product_price">
+                                <span class="sale_price">$50.00</span>
+                                <del class="old_price">$65.00</del>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product_card">
+                        <div class="card_badges">
+                            <span class="badge_category">MEATS</span>
+                            <span class="badge_discount">-27%</span>
+                        </div>
+                        <div class="card_image">
+                            <img src="./img/Shop/product1.png" alt="Organic Cabbage">
+                            <ul class="card_action_btns">
+                                <li><button type="button" title="Add to Cart"><i class="fa-solid fa-bag-shopping"></i></button></li>
+                                <li><button type="button" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button></li>
+                                <!-- <li><button type="button" title="Quick View"><i class="fa-regular fa-eye"></i></button></li> -->
+                            </ul>
+                        </div>
+                        <div class="card_body">
+                            <div class="rating_stars">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating_val">(4.0)</span>
+                            </div>
+                            <h3 class="product_title"><a href="#">Organic Cabbage</a></h3>
+                            <div class="product_price">
+                                <span class="sale_price">$50.00</span>
+                                <del class="old_price">$65.00</del>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product_card">
+                        <div class="card_badges">
+                            <span class="badge_category">MEATS</span>
+                            <span class="badge_discount">-27%</span>
+                        </div>
+                        <div class="card_image">
+                            <img src="./img/Shop/product2.png" alt="Organic Cabbage">
+                            <ul class="card_action_btns">
+                                <li><button type="button" title="Add to Cart"><i class="fa-solid fa-bag-shopping"></i></button></li>
+                                <li><button type="button" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button></li>
+                                <!-- <li><button type="button" title="Quick View"><i class="fa-regular fa-eye"></i></button></li> -->
+                            </ul>
+                        </div>
+                        <div class="card_body">
+                            <div class="rating_stars">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating_val">(4.0)</span>
+                            </div>
+                            <h3 class="product_title"><a href="#">Organic Cabbage</a></h3>
+                            <div class="product_price">
+                                <span class="sale_price">$50.00</span>
+                                <del class="old_price">$65.00</del>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product_card">
+                        <div class="card_badges">
+                            <span class="badge_category">MEATS</span>
+                            <span class="badge_discount">-27%</span>
+                        </div>
+                        <div class="card_image">
+                            <img src="./img/Shop/product3.png" alt="Organic Cabbage">
+                            <ul class="card_action_btns">
+                                <li><button type="button" title="Add to Cart"><i class="fa-solid fa-bag-shopping"></i></button></li>
+                                <li><button type="button" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button></li>
+                                <!-- <li><button type="button" title="Quick View"><i class="fa-regular fa-eye"></i></button></li> -->
+                            </ul>
+                        </div>
+                        <div class="card_body">
+                            <div class="rating_stars">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating_val">(4.0)</span>
+                            </div>
+                            <h3 class="product_title"><a href="#">Organic Cabbage</a></h3>
+                            <div class="product_price">
+                                <span class="sale_price">$50.00</span>
+                                <del class="old_price">$65.00</del>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product_card">
+                        <div class="card_badges">
+                            <span class="badge_category">MEATS</span>
+                            <span class="badge_discount">-27%</span>
+                        </div>
+                        <div class="card_image">
+                            <img src="./img/Shop/product4.png" alt="Organic Cabbage">
+                            <ul class="card_action_btns">
+                                <li><button type="button" title="Add to Cart"><i class="fa-solid fa-bag-shopping"></i></button></li>
+                                <li><button type="button" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button></li>
+                                <!-- <li><button type="button" title="Quick View"><i class="fa-regular fa-eye"></i></button></li> -->
+                            </ul>
+                        </div>
+                        <div class="card_body">
+                            <div class="rating_stars">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating_val">(4.0)</span>
+                            </div>
+                            <h3 class="product_title"><a href="#">Organic Cabbage</a></h3>
+                            <div class="product_price">
+                                <span class="sale_price">$50.00</span>
+                                <del class="old_price">$65.00</del>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product_card">
+                        <div class="card_badges">
+                            <span class="badge_category">MEATS</span>
+                            <span class="badge_discount">-27%</span>
+                        </div>
+                        <div class="card_image">
+                            <img src="./img/Shop/product5.png" alt="Organic Cabbage">
+                            <ul class="card_action_btns">
+                                <li><button type="button" title="Add to Cart"><i class="fa-solid fa-bag-shopping"></i></button></li>
+                                <li><button type="button" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button></li>
+                                <!-- <li><button type="button" title="Quick View"><i class="fa-regular fa-eye"></i></button></li> -->
+                            </ul>
+                        </div>
+                        <div class="card_body">
+                            <div class="rating_stars">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating_val">(4.0)</span>
+                            </div>
+                            <h3 class="product_title"><a href="#">Organic Cabbage</a></h3>
+                            <div class="product_price">
+                                <span class="sale_price">$50.00</span>
+                                <del class="old_price">$65.00</del>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product_card">
+                        <div class="card_badges">
+                            <span class="badge_category">MEATS</span>
+                            <span class="badge_discount">-27%</span>
+                        </div>
+                        <div class="card_image">
+                            <img src="./img/Shop/product6.png" alt="Organic Cabbage">
+                            <ul class="card_action_btns">
+                                <li><button type="button" title="Add to Cart"><i class="fa-solid fa-bag-shopping"></i></button></li>
+                                <li><button type="button" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button></li>
+                                <!-- <li><button type="button" title="Quick View"><i class="fa-regular fa-eye"></i></button></li> -->
+                            </ul>
+                        </div>
+                        <div class="card_body">
+                            <div class="rating_stars">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating_val">(4.0)</span>
+                            </div>
+                            <h3 class="product_title"><a href="#">Organic Cabbage</a></h3>
+                            <div class="product_price">
+                                <span class="sale_price">$50.00</span>
+                                <del class="old_price">$65.00</del>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="pagination_wrapper">
+                    <button class="page_num active" type="button">1</button>
+                    <button class="page_num" type="button">2</button>
+                    <button class="page_num" type="button">3</button>
+                    <button class="page_next" type="button"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </main>
+
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer_sec" style="background-image: url('./img/Home/footer.png');">
+  <div class="container">
+    
+    <div class="footer_top">
+      
+      <div class="footer_logo">
+        <a href="#">
+          <img src="./img/Home/logo2.png" alt="Organi Logo">
+        </a>
+      </div>
+
+      <div class="newsletter_box">
+        <form action="#">
+          <input type="text" placeholder="Your Phone Number" required>
+          <button type="submit">Subscribe Now <i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+      </div>
+
+      <div class="footer_social">
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+      </div>
+
+    </div>
+
+    <div class="footer_middle">
+      
+      <div class="footer_col">
+        <h3>Why People Like us</h3>
+        <p>
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Build your online store with WooCommerce the most popular
+        </p>
+        <a href="#" class="btn_more">View More <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="footer_col">
+        <h3>Information</h3>
+        <ul class="footer_links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Delivery Information</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Return Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer_col">
+        <h3>My Account</h3>
+        <ul class="footer_links">
+          <li><a href="#">My Account</a></li>
+          <li><a href="#">Shopping Cart</a></li>
+          <li><a href="#">Wishlist</a></li>
+          <li><a href="#">Order History</a></li>
+          <li><a href="#">International Orders</a></li>
+        </ul>
+      </div>
+
+      <div class="footer_col">
+        <h3>Contact Us</h3>
+        <ul class="contact_info">
+          <li><strong>Address:</strong> 1429 Netus Rd, NY 48247</li>
+          <li><strong>Email:</strong> Organi@gmail.com</li>
+          <li><strong>Phone:</strong> (+87) 4886-4174</li>
+        </ul>
+        <div class="payments_box">
+          <p>Payment Accepted</p>
+          <img src="./img/Home/payment.png" alt="Payment Methods">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer_bottom">
+      <p class="copyright">Copyright © 2026 <span>ORGANI</span> Inc. All rights reserved.</p>
+      <ul class="bottom_links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Sales and Refunds</a></li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+
+
+
+<div id="cartPopup" class="cart-popup ">
+  <div class="cart-popup-content">
+    <button id="closePopupBtn" class="cart-popup-close">&times;</button>
+    <div class="cart-popup-icon">
+      <i class="fa-solid fa-circle-check"></i>
+    </div>
+    <div class="cart-popup-info">
+      <h4>Added successfully!</h4>
+      <p id="popupProductName">Product name</p>
+    </div>
+    <a href="./cart.html" class="cart-popup-btn">View Cart</a>
+  </div>
+</div>
+
+<div id="cartOverlay" class="cart-overlay"></div>
+<div id="cartSidebar" class="cart-sidebar">
+  <div class="cart-sidebar-header">
+    <h3>Shopping Cart</h3>
+    <button id="closeCartBtn" class="close-btn">&times;</button>
+  </div>
+  
+  <div class="cart-sidebar-body" id="cartSidebarItems">
+    </div>
+
+  <div class="cart-sidebar-footer">
+    <div class="cart-total-row">
+      <span>total :</span>
+      <span id="cartSidebarTotal">$0.00</span>
+    </div>
+    <a href="./cart.html" class="btn-checkout">View Cart & Checkout</a>
+  </div>
+</div>
+
+
+
+<div id="cartPopup" class="cart-popup">
+  <div class="cart-popup-content">
+    <button id="closePopupBtn" class="cart-popup-close">&times;</button>
+    
+    <div class="cart-popup-img-box">
+      <img id="popupProductImg" src="" alt="Product Image">
+    </div>
+
+    <div class="cart-popup-info">
+      <span class="popup-badge"><i class="fa-solid fa-circle-check"></i> Added to cart</span>
+      <h4 id="popupProductName">Product name</h4>
+      <div class="popup-price-qty">
+        <span id="popupProductPrice" class="popup-price">$0.00</span>
+        <span id="popupProductQty" class="popup-qty">Quantity: 1</span>
+      </div>
+    </div>
+
+    <a href="./cart.html" class="cart-popup-btn">View Cart</a>
+  </div>
+</div>
+
+
+
+
+    <script src="./js/jquery.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="./js/main.js"></script>
+
+</body>
+</html>
